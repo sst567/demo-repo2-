@@ -1,0 +1,674 @@
+[0m14:01:03.349743 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022FBA07C250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022FBA09C410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022FB880F410>]}
+
+
+============================== 14:01:03.349743 | 41100b1d-6d9f-496a-b184-d5f17f2ad2fd ==============================
+[0m14:01:03.349743 [info ] [MainThread]: Running with dbt=1.5.2
+[0m14:01:03.349743 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\info\\DBT\\TEST1', 'profiles_dir': 'C:\\Users\\srsreedhar\\.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m14:01:03.674054 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `log-path` config in `dbt_project.yml` has been deprecated, and will no
+longer be supported in a future version of dbt-core. If you wish to write dbt
+logs to a custom directory, please use the --log-path CLI flag or DBT_LOG_PATH
+env var instead.
+[0m14:01:03.674054 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '41100b1d-6d9f-496a-b184-d5f17f2ad2fd', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022FBA5D3910>]}
+[0m14:01:03.674054 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `target-path` config in `dbt_project.yml` has been deprecated, and will no
+longer be supported in a future version of dbt-core. If you wish to write dbt
+artifacts to a custom directory, please use the --target-path CLI flag or
+DBT_TARGET_PATH env var instead.
+[0m14:01:03.674054 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '41100b1d-6d9f-496a-b184-d5f17f2ad2fd', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022FBA557D50>]}
+[0m14:01:03.689767 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '41100b1d-6d9f-496a-b184-d5f17f2ad2fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022FBBD63A90>]}
+[0m14:01:03.689767 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '41100b1d-6d9f-496a-b184-d5f17f2ad2fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022FBBD6BAD0>]}
+[0m14:01:03.689767 [info ] [MainThread]: Registered adapter: bigquery=1.5.3
+[0m14:01:03.705531 [debug] [MainThread]: checksum: 2435fa7be9fcfa6ffe15da8f202ddc09867bf7d6308330064299ccb85c8646b5, vars: {}, profile: , target: , version: 1.5.2
+[0m14:01:03.705531 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m14:01:03.705531 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '41100b1d-6d9f-496a-b184-d5f17f2ad2fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022FBBD6BA50>]}
+[0m14:01:04.264035 [debug] [MainThread]: 1699: static parser successfully parsed 01_incremental\xg_test_1.sql
+[0m14:01:04.284011 [debug] [MainThread]: 1699: static parser successfully parsed 02_precurated\xg_test2_table.sql
+[0m14:01:04.327058 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '41100b1d-6d9f-496a-b184-d5f17f2ad2fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022FBA56CC50>]}
+[0m14:01:04.327058 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '41100b1d-6d9f-496a-b184-d5f17f2ad2fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022FBC09D490>]}
+[0m14:01:04.327058 [info ] [MainThread]: Found 2 models, 0 tests, 0 snapshots, 0 analyses, 357 macros, 0 operations, 0 seed files, 1 source, 0 exposures, 0 metrics, 0 groups
+[0m14:01:04.327058 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '41100b1d-6d9f-496a-b184-d5f17f2ad2fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022FBBCBA510>]}
+[0m14:01:04.327058 [info ] [MainThread]: 
+[0m14:01:04.327058 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m14:01:04.327058 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_cprtqa-datapipeline-sp1_dbt_stage'
+[0m14:01:04.327058 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:01:05.292764 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '41100b1d-6d9f-496a-b184-d5f17f2ad2fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022FBBDAF7D0>]}
+[0m14:01:05.292764 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m14:01:05.292764 [info ] [MainThread]: 
+[0m14:01:05.310559 [debug] [Thread-1 (]: Began running node model.dataengineering.xg_test_1
+[0m14:01:05.310559 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.dataengineering.xg_test_1'
+[0m14:01:05.310559 [debug] [Thread-1 (]: Began compiling node model.dataengineering.xg_test_1
+[0m14:01:05.326337 [debug] [Thread-1 (]: Writing injected SQL for node "model.dataengineering.xg_test_1"
+[0m14:01:05.334195 [debug] [Thread-1 (]: Timing info for model.dataengineering.xg_test_1 (compile): 14:01:05.310559 => 14:01:05.334195
+[0m14:01:05.334195 [debug] [Thread-1 (]: Began executing node model.dataengineering.xg_test_1
+[0m14:01:05.334195 [debug] [Thread-1 (]: Timing info for model.dataengineering.xg_test_1 (execute): 14:01:05.334195 => 14:01:05.334195
+[0m14:01:05.342334 [debug] [Thread-1 (]: Finished running node model.dataengineering.xg_test_1
+[0m14:01:05.342334 [debug] [Thread-1 (]: Began running node model.dataengineering.xg_test2_table
+[0m14:01:05.342334 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dataengineering.xg_test_1, now model.dataengineering.xg_test2_table)
+[0m14:01:05.342334 [debug] [Thread-1 (]: Began compiling node model.dataengineering.xg_test2_table
+[0m14:01:05.342334 [debug] [Thread-1 (]: Writing injected SQL for node "model.dataengineering.xg_test2_table"
+[0m14:01:05.342334 [debug] [Thread-1 (]: Timing info for model.dataengineering.xg_test2_table (compile): 14:01:05.342334 => 14:01:05.342334
+[0m14:01:05.342334 [debug] [Thread-1 (]: Began executing node model.dataengineering.xg_test2_table
+[0m14:01:05.342334 [debug] [Thread-1 (]: Timing info for model.dataengineering.xg_test2_table (execute): 14:01:05.342334 => 14:01:05.342334
+[0m14:01:05.358103 [debug] [Thread-1 (]: Finished running node model.dataengineering.xg_test2_table
+[0m14:01:05.358103 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:01:05.358103 [debug] [MainThread]: Connection 'list_cprtqa-datapipeline-sp1_dbt_stage' was properly closed.
+[0m14:01:05.358103 [debug] [MainThread]: Connection 'model.dataengineering.xg_test2_table' was properly closed.
+[0m14:01:05.358103 [debug] [MainThread]: Command end result
+[0m14:01:05.373725 [debug] [MainThread]: Acquiring new bigquery connection 'generate_catalog'
+[0m14:01:05.373725 [info ] [MainThread]: Building catalog
+[0m14:01:05.373725 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:01:06.284996 [debug] [MainThread]: BigQuery adapter: Skipping catalog for cprtqa-datapipeline-sp1.dbt_stage - schema does not exist
+[0m14:01:06.284996 [debug] [MainThread]: BigQuery adapter: Skipping catalog for cprtqa-datapipeline-sp1.mmxx - schema does not exist
+[0m14:01:06.300792 [info ] [MainThread]: Catalog written to C:\info\DBT\TEST1\catalog.json
+[0m14:01:06.300792 [debug] [MainThread]: Command `dbt docs generate` succeeded at 14:01:06.300792 after 2.99 seconds
+[0m14:01:06.300792 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m14:01:06.300792 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022FBA1250D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022FBAB94690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022FBA49E610>]}
+[0m14:01:06.300792 [debug] [MainThread]: Flushing usage events
+[0m14:01:06.649748 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m14:01:15.786073 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002574895E990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002574906E290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000257494830D0>]}
+
+
+============================== 14:01:15.786073 | e822d660-0e10-487e-90c2-ec0877d02fb4 ==============================
+[0m14:01:15.786073 [info ] [MainThread]: Running with dbt=1.5.2
+[0m14:01:15.786073 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\srsreedhar\\.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'C:\\info\\DBT\\TEST1', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m14:01:16.091995 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `log-path` config in `dbt_project.yml` has been deprecated, and will no
+longer be supported in a future version of dbt-core. If you wish to write dbt
+logs to a custom directory, please use the --log-path CLI flag or DBT_LOG_PATH
+env var instead.
+[0m14:01:16.091995 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'e822d660-0e10-487e-90c2-ec0877d02fb4', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002574A099490>]}
+[0m14:01:16.091995 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `target-path` config in `dbt_project.yml` has been deprecated, and will no
+longer be supported in a future version of dbt-core. If you wish to write dbt
+artifacts to a custom directory, please use the --target-path CLI flag or
+DBT_TARGET_PATH env var instead.
+[0m14:01:16.107559 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'e822d660-0e10-487e-90c2-ec0877d02fb4', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002574A0B9CD0>]}
+[0m14:01:16.107559 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e822d660-0e10-487e-90c2-ec0877d02fb4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002574957A2D0>]}
+[0m14:01:16.123255 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e822d660-0e10-487e-90c2-ec0877d02fb4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002574A55E9D0>]}
+[0m14:01:41.836292 [error] [MainThread]: Encountered an error:
+
+[0m14:01:41.844225 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\DBT\US_NOTES\dbt-env\Lib\site-packages\dbt\cli\requires.py", line 86, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\DBT\US_NOTES\dbt-env\Lib\site-packages\dbt\cli\requires.py", line 71, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\DBT\US_NOTES\dbt-env\Lib\site-packages\dbt\cli\requires.py", line 142, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\DBT\US_NOTES\dbt-env\Lib\site-packages\dbt\cli\requires.py", line 168, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\DBT\US_NOTES\dbt-env\Lib\site-packages\dbt\cli\requires.py", line 215, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\DBT\US_NOTES\dbt-env\Lib\site-packages\dbt\cli\main.py", line 299, in docs_serve
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\DBT\US_NOTES\dbt-env\Lib\site-packages\dbt\task\serve.py", line 28, in run
+    httpd.serve_forever()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.1520.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 233, in serve_forever
+    ready = selector.select(poll_interval)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.1520.0_x64__qbz5n2kfra8p0\Lib\selectors.py", line 323, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.1520.0_x64__qbz5n2kfra8p0\Lib\selectors.py", line 314, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+[0m14:01:41.844225 [debug] [MainThread]: Command `dbt docs serve` failed at 14:01:41.844225 after 26.09 seconds
+[0m14:01:41.844225 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025748E6E810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025749484450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000257457F24D0>]}
+[0m14:01:41.852140 [debug] [MainThread]: Flushing usage events
+[0m14:01:42.602718 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m14:02:10.120443 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002210666CB50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002210666CED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022106224910>]}
+
+
+============================== 14:02:10.120443 | c50f091e-dfb9-4aeb-b300-f299cf6ae0ff ==============================
+[0m14:02:10.120443 [info ] [MainThread]: Running with dbt=1.5.2
+[0m14:02:10.120443 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\srsreedhar\\.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\info\\DBT\\TEST1', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m14:02:10.120443 [error] [MainThread]: Encountered an error:
+Runtime Error
+  dbt cannot run because no profile was specified for this dbt project.
+  To specify a profile for this project, add a line like the this to
+  your dbt_project.yml file:
+  
+  profile: [profile name]
+  
+  Here, [profile name] should be replaced with a profile name
+  defined in your profiles.yml file. You can find profiles.yml here:
+  
+  C:\Users\srsreedhar\.dbt/profiles.yml
+  
+[0m14:02:10.129951 [debug] [MainThread]: Command `dbt docs generate` failed at 14:02:10.129951 after 0.03 seconds
+[0m14:02:10.129951 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022106964350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022106169310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022106C83850>]}
+[0m14:02:10.129951 [debug] [MainThread]: Flushing usage events
+[0m14:02:10.535290 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m14:02:30.390602 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BF72AF6210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BF729A6750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BF72F65B10>]}
+
+
+============================== 14:02:30.390602 | 777cb836-255d-46dd-8159-959d2d10adc4 ==============================
+[0m14:02:30.390602 [info ] [MainThread]: Running with dbt=1.5.2
+[0m14:02:30.390602 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\srsreedhar\\.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\info\\DBT\\TEST1', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m14:02:30.708625 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `log-path` config in `dbt_project.yml` has been deprecated, and will no
+longer be supported in a future version of dbt-core. If you wish to write dbt
+logs to a custom directory, please use the --log-path CLI flag or DBT_LOG_PATH
+env var instead.
+[0m14:02:30.708625 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '777cb836-255d-46dd-8159-959d2d10adc4', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BF74196310>]}
+[0m14:02:30.708625 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `target-path` config in `dbt_project.yml` has been deprecated, and will no
+longer be supported in a future version of dbt-core. If you wish to write dbt
+artifacts to a custom directory, please use the --target-path CLI flag or
+DBT_TARGET_PATH env var instead.
+[0m14:02:30.708625 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '777cb836-255d-46dd-8159-959d2d10adc4', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BF741E9650>]}
+[0m14:02:30.724247 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '777cb836-255d-46dd-8159-959d2d10adc4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BF74863490>]}
+[0m14:02:30.731380 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '777cb836-255d-46dd-8159-959d2d10adc4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BF7486B090>]}
+[0m14:02:30.731380 [info ] [MainThread]: Registered adapter: bigquery=1.5.3
+[0m14:02:30.739942 [debug] [MainThread]: checksum: 2435fa7be9fcfa6ffe15da8f202ddc09867bf7d6308330064299ccb85c8646b5, vars: {}, profile: , target: , version: 1.5.2
+[0m14:02:30.787702 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m14:02:30.787702 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m14:02:30.803463 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '777cb836-255d-46dd-8159-959d2d10adc4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BF741BBF50>]}
+[0m14:02:30.803463 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '777cb836-255d-46dd-8159-959d2d10adc4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BF7494CA90>]}
+[0m14:02:30.803463 [info ] [MainThread]: Found 2 models, 0 tests, 0 snapshots, 0 analyses, 357 macros, 0 operations, 0 seed files, 1 source, 0 exposures, 0 metrics, 0 groups
+[0m14:02:30.803463 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '777cb836-255d-46dd-8159-959d2d10adc4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BF6EA3A050>]}
+[0m14:02:30.803463 [info ] [MainThread]: 
+[0m14:02:30.803463 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m14:02:30.803463 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_cprtqa-datapipeline-sp1_dbt_stage'
+[0m14:02:30.803463 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:02:31.750056 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '777cb836-255d-46dd-8159-959d2d10adc4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BF6EA3A050>]}
+[0m14:02:31.750056 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m14:02:31.750056 [info ] [MainThread]: 
+[0m14:02:31.765544 [debug] [Thread-1 (]: Began running node model.dataengineering.xg_test_1
+[0m14:02:31.765544 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.dataengineering.xg_test_1'
+[0m14:02:31.781202 [debug] [Thread-1 (]: Began compiling node model.dataengineering.xg_test_1
+[0m14:02:31.781202 [debug] [Thread-1 (]: Writing injected SQL for node "model.dataengineering.xg_test_1"
+[0m14:02:31.781202 [debug] [Thread-1 (]: Timing info for model.dataengineering.xg_test_1 (compile): 14:02:31.781202 => 14:02:31.781202
+[0m14:02:31.781202 [debug] [Thread-1 (]: Began executing node model.dataengineering.xg_test_1
+[0m14:02:31.781202 [debug] [Thread-1 (]: Timing info for model.dataengineering.xg_test_1 (execute): 14:02:31.781202 => 14:02:31.781202
+[0m14:02:31.781202 [debug] [Thread-1 (]: Finished running node model.dataengineering.xg_test_1
+[0m14:02:31.781202 [debug] [Thread-1 (]: Began running node model.dataengineering.xg_test2_table
+[0m14:02:31.796850 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dataengineering.xg_test_1, now model.dataengineering.xg_test2_table)
+[0m14:02:31.796850 [debug] [Thread-1 (]: Began compiling node model.dataengineering.xg_test2_table
+[0m14:02:31.796850 [debug] [Thread-1 (]: Writing injected SQL for node "model.dataengineering.xg_test2_table"
+[0m14:02:31.796850 [debug] [Thread-1 (]: Timing info for model.dataengineering.xg_test2_table (compile): 14:02:31.796850 => 14:02:31.796850
+[0m14:02:31.796850 [debug] [Thread-1 (]: Began executing node model.dataengineering.xg_test2_table
+[0m14:02:31.796850 [debug] [Thread-1 (]: Timing info for model.dataengineering.xg_test2_table (execute): 14:02:31.796850 => 14:02:31.796850
+[0m14:02:31.796850 [debug] [Thread-1 (]: Finished running node model.dataengineering.xg_test2_table
+[0m14:02:31.796850 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:02:31.796850 [debug] [MainThread]: Connection 'list_cprtqa-datapipeline-sp1_dbt_stage' was properly closed.
+[0m14:02:31.796850 [debug] [MainThread]: Connection 'model.dataengineering.xg_test2_table' was properly closed.
+[0m14:02:31.812476 [debug] [MainThread]: Command end result
+[0m14:02:31.828098 [debug] [MainThread]: Acquiring new bigquery connection 'generate_catalog'
+[0m14:02:31.828098 [info ] [MainThread]: Building catalog
+[0m14:02:31.828098 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:02:32.637277 [debug] [MainThread]: BigQuery adapter: Skipping catalog for cprtqa-datapipeline-sp1.dbt_stage - schema does not exist
+[0m14:02:32.637277 [debug] [MainThread]: BigQuery adapter: Skipping catalog for cprtqa-datapipeline-sp1.mmxx - schema does not exist
+[0m14:02:32.651943 [info ] [MainThread]: Catalog written to C:\info\DBT\TEST1\catalog.json
+[0m14:02:32.651943 [debug] [MainThread]: Command `dbt docs generate` succeeded at 14:02:32.651943 after 2.29 seconds
+[0m14:02:32.651943 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m14:02:32.651943 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BF72B1F050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BF6DCC9D10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BF6D7DFB50>]}
+[0m14:02:32.651943 [debug] [MainThread]: Flushing usage events
+[0m14:02:32.956626 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m14:02:40.423655 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000183B126E210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000183B196F290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000183AF0F2650>]}
+
+
+============================== 14:02:40.423655 | 0b6eb6cd-eb5a-4c1b-a754-04458f1efc8d ==============================
+[0m14:02:40.423655 [info ] [MainThread]: Running with dbt=1.5.2
+[0m14:02:40.431628 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\info\\DBT\\TEST1', 'profiles_dir': 'C:\\Users\\srsreedhar\\.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m14:02:40.836106 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `log-path` config in `dbt_project.yml` has been deprecated, and will no
+longer be supported in a future version of dbt-core. If you wish to write dbt
+logs to a custom directory, please use the --log-path CLI flag or DBT_LOG_PATH
+env var instead.
+[0m14:02:40.836106 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '0b6eb6cd-eb5a-4c1b-a754-04458f1efc8d', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000183B306B250>]}
+[0m14:02:40.836106 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `target-path` config in `dbt_project.yml` has been deprecated, and will no
+longer be supported in a future version of dbt-core. If you wish to write dbt
+artifacts to a custom directory, please use the --target-path CLI flag or
+DBT_TARGET_PATH env var instead.
+[0m14:02:40.844059 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '0b6eb6cd-eb5a-4c1b-a754-04458f1efc8d', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000183B2769650>]}
+[0m14:02:40.852139 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0b6eb6cd-eb5a-4c1b-a754-04458f1efc8d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000183B3063610>]}
+[0m14:02:40.860136 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0b6eb6cd-eb5a-4c1b-a754-04458f1efc8d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000183B306B190>]}
+[0m14:06:20.793313 [error] [MainThread]: Encountered an error:
+
+[0m14:06:20.793313 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\DBT\US_NOTES\dbt-env\Lib\site-packages\dbt\cli\requires.py", line 86, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\DBT\US_NOTES\dbt-env\Lib\site-packages\dbt\cli\requires.py", line 71, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\DBT\US_NOTES\dbt-env\Lib\site-packages\dbt\cli\requires.py", line 142, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\DBT\US_NOTES\dbt-env\Lib\site-packages\dbt\cli\requires.py", line 168, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\DBT\US_NOTES\dbt-env\Lib\site-packages\dbt\cli\requires.py", line 215, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\DBT\US_NOTES\dbt-env\Lib\site-packages\dbt\cli\main.py", line 299, in docs_serve
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\DBT\US_NOTES\dbt-env\Lib\site-packages\dbt\task\serve.py", line 28, in run
+    httpd.serve_forever()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.1520.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 233, in serve_forever
+    ready = selector.select(poll_interval)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.1520.0_x64__qbz5n2kfra8p0\Lib\selectors.py", line 323, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.1520.0_x64__qbz5n2kfra8p0\Lib\selectors.py", line 314, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+[0m14:06:20.793313 [debug] [MainThread]: Command `dbt docs serve` failed at 14:06:20.793313 after 220.41 seconds
+[0m14:06:20.808864 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000183B1754350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000183B1D84510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000183B1269210>]}
+[0m14:06:20.808864 [debug] [MainThread]: Flushing usage events
+[0m14:06:21.667387 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m14:06:27.021118 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024DC5C93190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024DC6129890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024DC61D79D0>]}
+
+
+============================== 14:06:27.021118 | 94ce3ddd-eb98-401b-acc2-68b5315eb610 ==============================
+[0m14:06:27.021118 [info ] [MainThread]: Running with dbt=1.5.2
+[0m14:06:27.027728 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\srsreedhar\\.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'C:\\info\\DBT\\TEST1', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m14:06:36.387113 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Credentials in profile "dataengineering", target "dev" invalid: Runtime Error
+    
+    dbt encountered an error while trying to read your profiles.yml file.
+    
+    Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+    
+[0m14:06:36.387113 [debug] [MainThread]: Command `dbt docs generate` failed at 14:06:36.387113 after 9.39 seconds
+[0m14:06:36.387113 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024DC6129E90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024DC67A44D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024DC6674C10>]}
+[0m14:06:36.387113 [debug] [MainThread]: Flushing usage events
+[0m14:06:36.722896 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m14:07:02.738979 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025C93BD7290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025C9367E410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025C93B42610>]}
+
+
+============================== 14:07:02.741141 | 35ccc790-4788-47bc-b312-c1a448d53e19 ==============================
+[0m14:07:02.741141 [info ] [MainThread]: Running with dbt=1.5.2
+[0m14:07:02.741141 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\info\\DBT\\TEST1', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\srsreedhar\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m14:07:03.047167 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `log-path` config in `dbt_project.yml` has been deprecated, and will no
+longer be supported in a future version of dbt-core. If you wish to write dbt
+logs to a custom directory, please use the --log-path CLI flag or DBT_LOG_PATH
+env var instead.
+[0m14:07:03.047167 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '35ccc790-4788-47bc-b312-c1a448d53e19', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025C93B27210>]}
+[0m14:07:03.047167 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `target-path` config in `dbt_project.yml` has been deprecated, and will no
+longer be supported in a future version of dbt-core. If you wish to write dbt
+artifacts to a custom directory, please use the --target-path CLI flag or
+DBT_TARGET_PATH env var instead.
+[0m14:07:03.061359 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '35ccc790-4788-47bc-b312-c1a448d53e19', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025C94B62E90>]}
+[0m14:07:03.061359 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '35ccc790-4788-47bc-b312-c1a448d53e19', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025C941CA390>]}
+[0m14:07:03.077580 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '35ccc790-4788-47bc-b312-c1a448d53e19', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025C95494310>]}
+[0m14:07:03.077580 [info ] [MainThread]: Registered adapter: bigquery=1.5.3
+[0m14:07:03.093274 [debug] [MainThread]: checksum: 2435fa7be9fcfa6ffe15da8f202ddc09867bf7d6308330064299ccb85c8646b5, vars: {}, profile: , target: , version: 1.5.2
+[0m14:07:03.093274 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m14:07:03.104947 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '35ccc790-4788-47bc-b312-c1a448d53e19', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025C95582F50>]}
+[0m14:07:03.641474 [debug] [MainThread]: 1699: static parser successfully parsed 01_incremental\xg_test_1.sql
+[0m14:07:03.656085 [debug] [MainThread]: 1699: static parser successfully parsed 02_precurated\xg_test2_table.sql
+[0m14:07:03.703380 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '35ccc790-4788-47bc-b312-c1a448d53e19', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025C9542B7D0>]}
+[0m14:07:03.703380 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '35ccc790-4788-47bc-b312-c1a448d53e19', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025C9560E7D0>]}
+[0m14:07:03.703380 [info ] [MainThread]: Found 2 models, 0 tests, 0 snapshots, 0 analyses, 357 macros, 0 operations, 0 seed files, 1 source, 0 exposures, 0 metrics, 0 groups
+[0m14:07:03.703380 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '35ccc790-4788-47bc-b312-c1a448d53e19', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025C954339D0>]}
+[0m14:07:03.703380 [info ] [MainThread]: 
+[0m14:07:03.703380 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m14:07:03.703380 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_scfs_dbt_stage'
+[0m14:07:03.703380 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:07:04.578241 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '35ccc790-4788-47bc-b312-c1a448d53e19', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025C94BB8190>]}
+[0m14:07:04.594113 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m14:07:04.594113 [info ] [MainThread]: 
+[0m14:07:04.609668 [debug] [Thread-1 (]: Began running node model.dataengineering.xg_test_1
+[0m14:07:04.609668 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.dataengineering.xg_test_1'
+[0m14:07:04.609668 [debug] [Thread-1 (]: Began compiling node model.dataengineering.xg_test_1
+[0m14:07:04.609668 [debug] [Thread-1 (]: Writing injected SQL for node "model.dataengineering.xg_test_1"
+[0m14:07:04.609668 [debug] [Thread-1 (]: Timing info for model.dataengineering.xg_test_1 (compile): 14:07:04.609668 => 14:07:04.609668
+[0m14:07:04.609668 [debug] [Thread-1 (]: Began executing node model.dataengineering.xg_test_1
+[0m14:07:04.609668 [debug] [Thread-1 (]: Timing info for model.dataengineering.xg_test_1 (execute): 14:07:04.609668 => 14:07:04.609668
+[0m14:07:04.625330 [debug] [Thread-1 (]: Finished running node model.dataengineering.xg_test_1
+[0m14:07:04.625330 [debug] [Thread-1 (]: Began running node model.dataengineering.xg_test2_table
+[0m14:07:04.625330 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dataengineering.xg_test_1, now model.dataengineering.xg_test2_table)
+[0m14:07:04.625330 [debug] [Thread-1 (]: Began compiling node model.dataengineering.xg_test2_table
+[0m14:07:04.625330 [debug] [Thread-1 (]: Writing injected SQL for node "model.dataengineering.xg_test2_table"
+[0m14:07:04.625330 [debug] [Thread-1 (]: Timing info for model.dataengineering.xg_test2_table (compile): 14:07:04.625330 => 14:07:04.625330
+[0m14:07:04.625330 [debug] [Thread-1 (]: Began executing node model.dataengineering.xg_test2_table
+[0m14:07:04.625330 [debug] [Thread-1 (]: Timing info for model.dataengineering.xg_test2_table (execute): 14:07:04.625330 => 14:07:04.625330
+[0m14:07:04.625330 [debug] [Thread-1 (]: Finished running node model.dataengineering.xg_test2_table
+[0m14:07:04.625330 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:07:04.625330 [debug] [MainThread]: Connection 'list_scfs_dbt_stage' was properly closed.
+[0m14:07:04.625330 [debug] [MainThread]: Connection 'model.dataengineering.xg_test2_table' was properly closed.
+[0m14:07:04.625330 [debug] [MainThread]: Command end result
+[0m14:07:04.643627 [debug] [MainThread]: Acquiring new bigquery connection 'generate_catalog'
+[0m14:07:04.643627 [info ] [MainThread]: Building catalog
+[0m14:07:04.643627 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:07:05.669826 [debug] [MainThread]: BigQuery adapter: Unhandled error while running:
+list dataset
+[0m14:07:05.669826 [debug] [MainThread]: BigQuery adapter: 404 GET https://bigquery.googleapis.com/bigquery/v2/projects/scfs/datasets?maxResults=10000&prettyPrint=false: Not found: Project scfs
+[0m14:07:05.669826 [error] [MainThread]: Encountered an error:
+Runtime Error
+  404 GET https://bigquery.googleapis.com/bigquery/v2/projects/scfs/datasets?maxResults=10000&prettyPrint=false: Not found: Project scfs
+[0m14:07:05.685267 [debug] [MainThread]: Command `dbt docs generate` failed at 14:07:05.685267 after 2.97 seconds
+[0m14:07:05.685267 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m14:07:05.685267 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025C93690C90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025C955AA990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025C941831D0>]}
+[0m14:07:05.685267 [debug] [MainThread]: Flushing usage events
+[0m14:07:06.086049 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m14:07:53.159650 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B6EB48AE50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B6EB94CD50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B6EB90F890>]}
+
+
+============================== 14:07:53.159650 | c4a0063a-6e99-494a-93cd-4fa53475d180 ==============================
+[0m14:07:53.159650 [info ] [MainThread]: Running with dbt=1.5.2
+[0m14:07:53.159650 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\info\\DBT\\TEST1', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\srsreedhar\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m14:07:53.467641 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `log-path` config in `dbt_project.yml` has been deprecated, and will no
+longer be supported in a future version of dbt-core. If you wish to write dbt
+logs to a custom directory, please use the --log-path CLI flag or DBT_LOG_PATH
+env var instead.
+[0m14:07:53.467641 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'c4a0063a-6e99-494a-93cd-4fa53475d180', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B6ECB76490>]}
+[0m14:07:53.483243 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `target-path` config in `dbt_project.yml` has been deprecated, and will no
+longer be supported in a future version of dbt-core. If you wish to write dbt
+artifacts to a custom directory, please use the --target-path CLI flag or
+DBT_TARGET_PATH env var instead.
+[0m14:07:53.483243 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'c4a0063a-6e99-494a-93cd-4fa53475d180', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B6ECB76490>]}
+[0m14:07:53.483243 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c4a0063a-6e99-494a-93cd-4fa53475d180', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B6ED263690>]}
+[0m14:07:53.498890 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c4a0063a-6e99-494a-93cd-4fa53475d180', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B6ED26B6D0>]}
+[0m14:07:53.498890 [info ] [MainThread]: Registered adapter: bigquery=1.5.3
+[0m14:07:53.514525 [debug] [MainThread]: checksum: 2435fa7be9fcfa6ffe15da8f202ddc09867bf7d6308330064299ccb85c8646b5, vars: {}, profile: , target: , version: 1.5.2
+[0m14:07:53.567273 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m14:07:53.567273 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m14:07:53.567273 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c4a0063a-6e99-494a-93cd-4fa53475d180', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B6ED382E10>]}
+[0m14:07:53.567273 [debug] [MainThread]: Acquiring new bigquery connection 'generate_catalog'
+[0m14:07:53.577912 [info ] [MainThread]: Building catalog
+[0m14:07:53.577912 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:07:54.489337 [debug] [MainThread]: BigQuery adapter: Unhandled error while running:
+list dataset
+[0m14:07:54.489337 [debug] [MainThread]: BigQuery adapter: 404 GET https://bigquery.googleapis.com/bigquery/v2/projects/scfs/datasets?maxResults=10000&prettyPrint=false: Not found: Project scfs
+[0m14:07:54.489337 [error] [MainThread]: Encountered an error:
+Runtime Error
+  404 GET https://bigquery.googleapis.com/bigquery/v2/projects/scfs/datasets?maxResults=10000&prettyPrint=false: Not found: Project scfs
+[0m14:07:54.489337 [debug] [MainThread]: Command `dbt docs generate` failed at 14:07:54.489337 after 1.36 seconds
+[0m14:07:54.489337 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m14:07:54.489337 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B6EBFABDD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B6EB469410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B6E66C9CD0>]}
+[0m14:07:54.489337 [debug] [MainThread]: Flushing usage events
+[0m14:07:55.001895 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m14:08:20.473352 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018639C44190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018639C78110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000186378CD1D0>]}
+
+
+============================== 14:08:20.481428 | ebc64d03-7b4c-486f-81f3-c0a1b7b11999 ==============================
+[0m14:08:20.481428 [info ] [MainThread]: Running with dbt=1.5.2
+[0m14:08:20.481428 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\srsreedhar\\.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'C:\\info\\DBT\\TEST1', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m14:08:20.868824 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `log-path` config in `dbt_project.yml` has been deprecated, and will no
+longer be supported in a future version of dbt-core. If you wish to write dbt
+logs to a custom directory, please use the --log-path CLI flag or DBT_LOG_PATH
+env var instead.
+[0m14:08:20.868824 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'ebc64d03-7b4c-486f-81f3-c0a1b7b11999', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001863B36A950>]}
+[0m14:08:20.868824 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `target-path` config in `dbt_project.yml` has been deprecated, and will no
+longer be supported in a future version of dbt-core. If you wish to write dbt
+artifacts to a custom directory, please use the --target-path CLI flag or
+DBT_TARGET_PATH env var instead.
+[0m14:08:20.876186 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'ebc64d03-7b4c-486f-81f3-c0a1b7b11999', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001863A2A0450>]}
+[0m14:08:20.883683 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ebc64d03-7b4c-486f-81f3-c0a1b7b11999', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001863AE96690>]}
+[0m14:08:20.893242 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ebc64d03-7b4c-486f-81f3-c0a1b7b11999', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001863B36BA50>]}
+[0m14:08:20.899416 [info ] [MainThread]: Registered adapter: bigquery=1.5.3
+[0m14:08:20.900694 [debug] [MainThread]: checksum: 2435fa7be9fcfa6ffe15da8f202ddc09867bf7d6308330064299ccb85c8646b5, vars: {}, profile: , target: , version: 1.5.2
+[0m14:08:20.955818 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m14:08:20.955818 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m14:08:20.955818 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ebc64d03-7b4c-486f-81f3-c0a1b7b11999', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001863AE95E10>]}
+[0m14:08:20.955818 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ebc64d03-7b4c-486f-81f3-c0a1b7b11999', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001863B64D710>]}
+[0m14:08:20.955818 [info ] [MainThread]: Found 2 models, 0 tests, 0 snapshots, 0 analyses, 357 macros, 0 operations, 0 seed files, 1 source, 0 exposures, 0 metrics, 0 groups
+[0m14:08:20.955818 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ebc64d03-7b4c-486f-81f3-c0a1b7b11999', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000186399A8210>]}
+[0m14:08:20.955818 [info ] [MainThread]: 
+[0m14:08:20.971992 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m14:08:20.971992 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_scfs_dbt_stage'
+[0m14:08:20.971992 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:08:22.274329 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ebc64d03-7b4c-486f-81f3-c0a1b7b11999', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001863AF33010>]}
+[0m14:08:22.274329 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m14:08:22.274329 [info ] [MainThread]: 
+[0m14:08:22.290350 [debug] [Thread-1 (]: Began running node model.dataengineering.xg_test_1
+[0m14:08:22.299431 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.dataengineering.xg_test_1'
+[0m14:08:22.301036 [debug] [Thread-1 (]: Began compiling node model.dataengineering.xg_test_1
+[0m14:08:22.301036 [debug] [Thread-1 (]: Writing injected SQL for node "model.dataengineering.xg_test_1"
+[0m14:08:22.310351 [debug] [Thread-1 (]: Timing info for model.dataengineering.xg_test_1 (compile): 14:08:22.301036 => 14:08:22.309846
+[0m14:08:22.311270 [debug] [Thread-1 (]: Began executing node model.dataengineering.xg_test_1
+[0m14:08:22.311270 [debug] [Thread-1 (]: Timing info for model.dataengineering.xg_test_1 (execute): 14:08:22.311270 => 14:08:22.311270
+[0m14:08:22.311270 [debug] [Thread-1 (]: Finished running node model.dataengineering.xg_test_1
+[0m14:08:22.311270 [debug] [Thread-1 (]: Began running node model.dataengineering.xg_test2_table
+[0m14:08:22.311270 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dataengineering.xg_test_1, now model.dataengineering.xg_test2_table)
+[0m14:08:22.311270 [debug] [Thread-1 (]: Began compiling node model.dataengineering.xg_test2_table
+[0m14:08:22.319691 [debug] [Thread-1 (]: Writing injected SQL for node "model.dataengineering.xg_test2_table"
+[0m14:08:22.319691 [debug] [Thread-1 (]: Timing info for model.dataengineering.xg_test2_table (compile): 14:08:22.319691 => 14:08:22.319691
+[0m14:08:22.319691 [debug] [Thread-1 (]: Began executing node model.dataengineering.xg_test2_table
+[0m14:08:22.327690 [debug] [Thread-1 (]: Timing info for model.dataengineering.xg_test2_table (execute): 14:08:22.319691 => 14:08:22.319691
+[0m14:08:22.327690 [debug] [Thread-1 (]: Finished running node model.dataengineering.xg_test2_table
+[0m14:08:22.332774 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:08:22.332774 [debug] [MainThread]: Connection 'list_scfs_dbt_stage' was properly closed.
+[0m14:08:22.332774 [debug] [MainThread]: Connection 'model.dataengineering.xg_test2_table' was properly closed.
+[0m14:08:22.335799 [debug] [MainThread]: Command end result
+[0m14:08:22.368768 [debug] [MainThread]: Acquiring new bigquery connection 'generate_catalog'
+[0m14:08:22.371406 [info ] [MainThread]: Building catalog
+[0m14:08:22.372769 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:08:24.092753 [debug] [MainThread]: BigQuery adapter: Unhandled error while running:
+list dataset
+[0m14:08:24.092753 [debug] [MainThread]: BigQuery adapter: 404 GET https://bigquery.googleapis.com/bigquery/v2/projects/scfs/datasets?maxResults=10000&prettyPrint=false: Not found: Project scfs
+[0m14:08:24.096773 [error] [MainThread]: Encountered an error:
+Runtime Error
+  404 GET https://bigquery.googleapis.com/bigquery/v2/projects/scfs/datasets?maxResults=10000&prettyPrint=false: Not found: Project scfs
+[0m14:08:24.099510 [debug] [MainThread]: Command `dbt docs generate` failed at 14:08:24.099510 after 3.65 seconds
+[0m14:08:24.102276 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m14:08:24.103393 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018639C78850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001863A283310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001863978E210>]}
+[0m14:08:24.103393 [debug] [MainThread]: Flushing usage events
+[0m14:08:24.793680 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m14:08:36.208857 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015E97C7E650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015E98223D50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015E98782950>]}
+
+
+============================== 14:08:36.213896 | 4472e0e0-e446-4ce6-9112-a09ecefd9f0f ==============================
+[0m14:08:36.213896 [info ] [MainThread]: Running with dbt=1.5.2
+[0m14:08:36.218406 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\srsreedhar\\.dbt', 'log_path': 'C:\\info\\DBT\\TEST1', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m14:08:36.531175 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `log-path` config in `dbt_project.yml` has been deprecated, and will no
+longer be supported in a future version of dbt-core. If you wish to write dbt
+logs to a custom directory, please use the --log-path CLI flag or DBT_LOG_PATH
+env var instead.
+[0m14:08:36.531175 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '4472e0e0-e446-4ce6-9112-a09ecefd9f0f', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015E996364D0>]}
+[0m14:08:36.531175 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `target-path` config in `dbt_project.yml` has been deprecated, and will no
+longer be supported in a future version of dbt-core. If you wish to write dbt
+artifacts to a custom directory, please use the --target-path CLI flag or
+DBT_TARGET_PATH env var instead.
+[0m14:08:36.534464 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '4472e0e0-e446-4ce6-9112-a09ecefd9f0f', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015E99396310>]}
+[0m14:08:36.543831 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4472e0e0-e446-4ce6-9112-a09ecefd9f0f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015E99A63FD0>]}
+[0m14:08:36.553634 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '4472e0e0-e446-4ce6-9112-a09ecefd9f0f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015E99A75BD0>]}
+[0m14:08:36.553634 [info ] [MainThread]: Registered adapter: bigquery=1.5.3
+[0m14:08:36.562757 [debug] [MainThread]: checksum: 2435fa7be9fcfa6ffe15da8f202ddc09867bf7d6308330064299ccb85c8646b5, vars: {}, profile: , target: , version: 1.5.2
+[0m14:08:36.573897 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m14:08:36.573897 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '4472e0e0-e446-4ce6-9112-a09ecefd9f0f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015E987D0AD0>]}
+[0m14:08:37.138798 [debug] [MainThread]: 1699: static parser successfully parsed 01_incremental\xg_test_1.sql
+[0m14:08:37.148521 [debug] [MainThread]: 1699: static parser successfully parsed 02_precurated\xg_test2_table.sql
+[0m14:08:37.193487 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '4472e0e0-e446-4ce6-9112-a09ecefd9f0f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015E99A814D0>]}
+[0m14:08:37.193487 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '4472e0e0-e446-4ce6-9112-a09ecefd9f0f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015E99B2FED0>]}
+[0m14:08:37.193487 [info ] [MainThread]: Found 2 models, 0 tests, 0 snapshots, 0 analyses, 357 macros, 0 operations, 0 seed files, 1 source, 0 exposures, 0 metrics, 0 groups
+[0m14:08:37.193487 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4472e0e0-e446-4ce6-9112-a09ecefd9f0f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015E99A7B9D0>]}
+[0m14:08:37.198494 [info ] [MainThread]: 
+[0m14:08:37.198494 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m14:08:37.198494 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_cprtqa-datapipeline-sp1_dbt_stage'
+[0m14:08:37.198494 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:08:38.084357 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4472e0e0-e446-4ce6-9112-a09ecefd9f0f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015E99A7B9D0>]}
+[0m14:08:38.084357 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m14:08:38.084357 [info ] [MainThread]: 
+[0m14:08:38.100021 [debug] [Thread-1 (]: Began running node model.dataengineering.xg_test_1
+[0m14:08:38.100021 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.dataengineering.xg_test_1'
+[0m14:08:38.100021 [debug] [Thread-1 (]: Began compiling node model.dataengineering.xg_test_1
+[0m14:08:38.116962 [debug] [Thread-1 (]: Writing injected SQL for node "model.dataengineering.xg_test_1"
+[0m14:08:38.116962 [debug] [Thread-1 (]: Timing info for model.dataengineering.xg_test_1 (compile): 14:08:38.100021 => 14:08:38.116962
+[0m14:08:38.116962 [debug] [Thread-1 (]: Began executing node model.dataengineering.xg_test_1
+[0m14:08:38.116962 [debug] [Thread-1 (]: Timing info for model.dataengineering.xg_test_1 (execute): 14:08:38.116962 => 14:08:38.116962
+[0m14:08:38.116962 [debug] [Thread-1 (]: Finished running node model.dataengineering.xg_test_1
+[0m14:08:38.116962 [debug] [Thread-1 (]: Began running node model.dataengineering.xg_test2_table
+[0m14:08:38.116962 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dataengineering.xg_test_1, now model.dataengineering.xg_test2_table)
+[0m14:08:38.116962 [debug] [Thread-1 (]: Began compiling node model.dataengineering.xg_test2_table
+[0m14:08:38.132740 [debug] [Thread-1 (]: Writing injected SQL for node "model.dataengineering.xg_test2_table"
+[0m14:08:38.132740 [debug] [Thread-1 (]: Timing info for model.dataengineering.xg_test2_table (compile): 14:08:38.116962 => 14:08:38.132740
+[0m14:08:38.132740 [debug] [Thread-1 (]: Began executing node model.dataengineering.xg_test2_table
+[0m14:08:38.132740 [debug] [Thread-1 (]: Timing info for model.dataengineering.xg_test2_table (execute): 14:08:38.132740 => 14:08:38.132740
+[0m14:08:38.132740 [debug] [Thread-1 (]: Finished running node model.dataengineering.xg_test2_table
+[0m14:08:38.132740 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:08:38.132740 [debug] [MainThread]: Connection 'list_cprtqa-datapipeline-sp1_dbt_stage' was properly closed.
+[0m14:08:38.132740 [debug] [MainThread]: Connection 'model.dataengineering.xg_test2_table' was properly closed.
+[0m14:08:38.132740 [debug] [MainThread]: Command end result
+[0m14:08:38.148872 [debug] [MainThread]: Acquiring new bigquery connection 'generate_catalog'
+[0m14:08:38.148872 [info ] [MainThread]: Building catalog
+[0m14:08:38.148872 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:08:39.012737 [debug] [MainThread]: BigQuery adapter: Skipping catalog for cprtqa-datapipeline-sp1.dbt_stage - schema does not exist
+[0m14:08:39.012737 [debug] [MainThread]: BigQuery adapter: Skipping catalog for cprtqa-datapipeline-sp1.mmxx - schema does not exist
+[0m14:08:39.028142 [info ] [MainThread]: Catalog written to C:\info\DBT\TEST1\catalog.json
+[0m14:08:39.028142 [debug] [MainThread]: Command `dbt docs generate` succeeded at 14:08:39.028142 after 2.86 seconds
+[0m14:08:39.028142 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m14:08:39.044517 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015E98784210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015E98157450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015E929CFB50>]}
+[0m14:08:39.044517 [debug] [MainThread]: Flushing usage events
+[0m14:08:39.327894 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m14:08:44.334770 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000203FAE43490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000203FA88A950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000203FAE66E50>]}
+
+
+============================== 14:08:44.334770 | db0ed29f-3e30-4214-a34b-f3d08d61bed5 ==============================
+[0m14:08:44.334770 [info ] [MainThread]: Running with dbt=1.5.2
+[0m14:08:44.334770 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\info\\DBT\\TEST1', 'profiles_dir': 'C:\\Users\\srsreedhar\\.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m14:08:44.626273 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `log-path` config in `dbt_project.yml` has been deprecated, and will no
+longer be supported in a future version of dbt-core. If you wish to write dbt
+logs to a custom directory, please use the --log-path CLI flag or DBT_LOG_PATH
+env var instead.
+[0m14:08:44.626273 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'db0ed29f-3e30-4214-a34b-f3d08d61bed5', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000203FC121C50>]}
+[0m14:08:44.626273 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `target-path` config in `dbt_project.yml` has been deprecated, and will no
+longer be supported in a future version of dbt-core. If you wish to write dbt
+artifacts to a custom directory, please use the --target-path CLI flag or
+DBT_TARGET_PATH env var instead.
+[0m14:08:44.626273 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'db0ed29f-3e30-4214-a34b-f3d08d61bed5', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000203FC0C1650>]}
+[0m14:08:44.642898 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'db0ed29f-3e30-4214-a34b-f3d08d61bed5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000203FC563E50>]}
+[0m14:08:44.657941 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'db0ed29f-3e30-4214-a34b-f3d08d61bed5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000203FC0E6610>]}
+[0m14:10:32.501273 [error] [MainThread]: Encountered an error:
+
+[0m14:10:32.501273 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\DBT\US_NOTES\dbt-env\Lib\site-packages\dbt\cli\requires.py", line 86, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\DBT\US_NOTES\dbt-env\Lib\site-packages\dbt\cli\requires.py", line 71, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\DBT\US_NOTES\dbt-env\Lib\site-packages\dbt\cli\requires.py", line 142, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\DBT\US_NOTES\dbt-env\Lib\site-packages\dbt\cli\requires.py", line 168, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\DBT\US_NOTES\dbt-env\Lib\site-packages\dbt\cli\requires.py", line 215, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\DBT\US_NOTES\dbt-env\Lib\site-packages\dbt\cli\main.py", line 299, in docs_serve
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\DBT\US_NOTES\dbt-env\Lib\site-packages\dbt\task\serve.py", line 28, in run
+    httpd.serve_forever()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.1520.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 233, in serve_forever
+    ready = selector.select(poll_interval)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.1520.0_x64__qbz5n2kfra8p0\Lib\selectors.py", line 323, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.1520.0_x64__qbz5n2kfra8p0\Lib\selectors.py", line 314, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+[0m14:10:32.501273 [debug] [MainThread]: Command `dbt docs serve` failed at 14:10:32.501273 after 108.20 seconds
+[0m14:10:32.501273 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000203FB4A4090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000203FAED9F10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000203FA88A950>]}
+[0m14:10:32.516747 [debug] [MainThread]: Flushing usage events
+[0m14:10:33.259722 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m14:10:52.517724 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023DD1F91990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023DD1F7CDD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023DD24C7290>]}
+
+
+============================== 14:10:52.517724 | 07960394-87fc-4bfe-912b-be3df277cab6 ==============================
+[0m14:10:52.517724 [info ] [MainThread]: Running with dbt=1.5.2
+[0m14:10:52.517724 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\srsreedhar\\.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'C:\\info\\DBT\\TEST1', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m14:10:52.843082 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `log-path` config in `dbt_project.yml` has been deprecated, and will no
+longer be supported in a future version of dbt-core. If you wish to write dbt
+logs to a custom directory, please use the --log-path CLI flag or DBT_LOG_PATH
+env var instead.
+[0m14:10:52.843082 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '07960394-87fc-4bfe-912b-be3df277cab6', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023DD3B5D6D0>]}
+[0m14:10:52.849693 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `target-path` config in `dbt_project.yml` has been deprecated, and will no
+longer be supported in a future version of dbt-core. If you wish to write dbt
+artifacts to a custom directory, please use the --target-path CLI flag or
+DBT_TARGET_PATH env var instead.
+[0m14:10:52.849693 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '07960394-87fc-4bfe-912b-be3df277cab6', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023DD1F92E50>]}
+[0m14:10:52.849693 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '07960394-87fc-4bfe-912b-be3df277cab6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023DD3B57F90>]}
+[0m14:10:52.865449 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '07960394-87fc-4bfe-912b-be3df277cab6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023DD3B5E990>]}
+[0m14:13:17.103316 [error] [MainThread]: Encountered an error:
+
+[0m14:13:17.103316 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\DBT\US_NOTES\dbt-env\Lib\site-packages\dbt\cli\requires.py", line 86, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\DBT\US_NOTES\dbt-env\Lib\site-packages\dbt\cli\requires.py", line 71, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\DBT\US_NOTES\dbt-env\Lib\site-packages\dbt\cli\requires.py", line 142, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\DBT\US_NOTES\dbt-env\Lib\site-packages\dbt\cli\requires.py", line 168, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\DBT\US_NOTES\dbt-env\Lib\site-packages\dbt\cli\requires.py", line 215, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\DBT\US_NOTES\dbt-env\Lib\site-packages\dbt\cli\main.py", line 299, in docs_serve
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\DBT\US_NOTES\dbt-env\Lib\site-packages\dbt\task\serve.py", line 28, in run
+    httpd.serve_forever()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.1520.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 233, in serve_forever
+    ready = selector.select(poll_interval)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.1520.0_x64__qbz5n2kfra8p0\Lib\selectors.py", line 323, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.1520.0_x64__qbz5n2kfra8p0\Lib\selectors.py", line 314, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+[0m14:13:17.103316 [debug] [MainThread]: Command `dbt docs serve` failed at 14:13:17.103316 after 144.62 seconds
+[0m14:13:17.103316 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023DD2A9E950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023DD1F42C90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023DD241EF50>]}
+[0m14:13:17.119310 [debug] [MainThread]: Flushing usage events
+[0m14:13:17.665556 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m14:13:21.567975 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C758DD3650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C758D29810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C758FF7410>]}
+
+
+============================== 14:13:21.567975 | c241f767-795e-443c-ba5b-d8c29616a20b ==============================
+[0m14:13:21.567975 [info ] [MainThread]: Running with dbt=1.5.2
+[0m14:13:21.567975 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\info\\DBT\\TEST1', 'profiles_dir': 'C:\\Users\\srsreedhar\\.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m14:13:21.891960 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `log-path` config in `dbt_project.yml` has been deprecated, and will no
+longer be supported in a future version of dbt-core. If you wish to write dbt
+logs to a custom directory, please use the --log-path CLI flag or DBT_LOG_PATH
+env var instead.
+[0m14:13:21.891960 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'c241f767-795e-443c-ba5b-d8c29616a20b', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C75A0C64D0>]}
+[0m14:13:21.891960 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `target-path` config in `dbt_project.yml` has been deprecated, and will no
+longer be supported in a future version of dbt-core. If you wish to write dbt
+artifacts to a custom directory, please use the --target-path CLI flag or
+DBT_TARGET_PATH env var instead.
+[0m14:13:21.891960 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'c241f767-795e-443c-ba5b-d8c29616a20b', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C75A0B9650>]}
+[0m14:13:21.907554 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c241f767-795e-443c-ba5b-d8c29616a20b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C75A563D50>]}
+[0m14:13:21.922688 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c241f767-795e-443c-ba5b-d8c29616a20b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C75A56BAD0>]}
